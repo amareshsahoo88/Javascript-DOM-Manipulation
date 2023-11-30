@@ -5,13 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master DOM Manipulation Part - 1</title>
     <style>
+        *{
+            margin : 0;
+            padding: 0;
+           
+            
+        }
+
+        .container{
+            margin: 10px;
+            padding : 10px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid white;
+            border-radius: 5px;
+            
+        }
+
+        body{
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, black , grey );
+        }
+
+        #main-heading{
+            font-family:'Times New Roman', Times, serif;
+            font-size:larger;
+            font-weight: 500;
+            color: azure;
+        }
+
+        .list-items{
+            font-family: 'Courier New', Courier, monospace;
+            font-size:medium;
+            font-weight: 200;
+            color: black;
+            padding:2px
+        }
+        li{
+            background-color: aliceblue;
+
+        }
 
     </style>
 </head>
 <body>
     <div class="container">
         <h1 id="main-heading">
-            favorite Movie Franchise
+            Favorite Movie Franchise
         </h1>
         <ul>
             <li class="list-items">The Matrix</li>
@@ -22,18 +64,7 @@
         </ul>
     </div>
 
-    <div class="container1">
-        <h1 id="main-heading1">
-            favorite Movie Franchise
-        </h1>
-        <ul>
-            <li class="list-items1">The Matrix1</li>
-            <li class="list-items2">Star Wars1</li>
-            <li class="list-items3">Happy Potter1</li>
-            <li class="list-items5">Lord Of The Rings1</li>
-            <li class="list-items4">Marvel</li>
-        </ul>
-    </div>
+   
     <script src="app.js"></script>
     
 </body>
