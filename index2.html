@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        background-color: antiquewhite;
+    }
+
+    body{
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container{
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    button{
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .hidden-content {
+        display: none;
+    }
+
+    .hide-btn{
+        display: none;
+    }
+
+    .hidden-content.reveal-btn {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .reveal-btn.hide-btn{
+        display: none;
+    }
+
+    .hide-btn.show-btn{
+        margin: 10px;
+        padding: 10px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: block;
+    }
+
+    
+
+
+
+
+</style>
+
+<body>
+    <h1 id="main-heading">Event Listner</h1>
+
+    <div class="container">
+        <button class="reveal-btn boxes">Reveal More</button>
+        <button class="hide-btn boxes">Hide content</button>
+
+        <div class="hidden-content boxes">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque sed natus, minima excepturi dicta
+            eligendi. Voluptas architecto ut, temporibus iure dolore dolorum dignissimos?
+        </div>
+
+    </div>
+</body>
+<script src="app2.js"></script>
+
+</html>
